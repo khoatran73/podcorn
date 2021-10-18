@@ -1,0 +1,245 @@
+:root {
+    --primary-color: #090335;
+    --orange-color: #FE7268;
+    /* --dark-orange: #FC7670; */
+    /* --md-orange :#FFB2A3; */
+    --light-orange: #FFF4F2;
+    /* --login-text-color: #71717D;
+    --login-border-color: #8992A2; */
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 600;
+    padding: 18px 20px;
+    text-align: center;
+    border: 2px solid transparent;
+    font-family: Gilroy, Times, Baskerville, Georgia, serif;
+    display: inline-block;
+    min-width: 222px;
+    transition: ease-in-out 0.3s;
+    background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 1279px) {
+    .btn {
+        min-width: 200px;
+    }
+
+    .btn ~ .btn {
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .btn {
+        min-width: 100%;
+    }
+}
+
+.btn:hover {
+    background-color: var(--orange-color);
+}
+
+.btn-sm {
+    min-width: 108px;
+    padding: 11px 20px;
+}
+
+.btn-orange {
+    background-color: #fe7268;
+}
+
+.btn-orange:hover {
+    background-color: var(--primary-color);
+}
+
+.btn-gray {
+    border-color: rgba(19,38,69,.5);
+    color: rgba(77,77,93,.8);
+    background-color: white;
+}
+
+.btn-gray:hover {
+    border-color: var(--orange-color);
+    color: var(--orange-color);
+    background-color: white;
+}
+
+.btn-primary {
+    background-color: white;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+/* @media screen and (max-width: ) {
+
+} */
+
+.col-sm-1 {
+    width: 8.3333%;
+}
+.col-sm-2 {
+    width: 16.6667%;
+}
+.col-sm-3 {
+    width: 25%;
+}
+.col-sm-4 {
+    width: 33.3333%;
+}
+.col-sm-5 {
+    width: 41.6667%;
+}
+.col-sm-6 {
+    width: 50%;
+}
+.col-sm-7 {
+    width: 58.3333%;
+}
+.col-sm-8 {
+    width: 66.6667%;
+}
+.col-sm-9 {
+    width: 75%;
+}
+.col-sm-10 {
+    width: 83.3333%;
+}
+.col-sm-11 {
+    width: 91.6667%;
+}
+.col-sm-12 {
+    width: 100%;
+}
+
+@media (max-width: 1023px) {
+    .col-md-1 {
+        width: 8.3333%;
+    }
+    .col-md-2 {
+        width: 16.6667%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-4 {
+        width: 33.3333%;
+    }
+    .col-md-5 {
+        width: 41.6667%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-7 {
+        width: 58.3333%;
+    }
+    .col-md-8 {
+        width: 66.6667%;
+    }
+    .col-md-9 {
+        width: 75%;
+    }
+    .col-md-10 {
+        width: 83.3333%;
+    }
+    .col-md-11 {
+        width: 91.6667%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-lg-1 {
+        width: 8.3333%;
+    }
+    .col-lg-2 {
+        width: 16.6667%;
+    }
+    .col-lg-3 {
+        width: 25%;
+    }
+    .col-lg-4 {
+        width: 33.3333%;
+    }
+    .col-lg-5 {
+        width: 41.6667%;
+    }
+    .col-lg-6 {
+        width: 50%;
+    }
+    .col-lg-7 {
+        width: 58.3333%;
+    }
+    .col-lg-8 {
+        width: 66.6667%;
+    }
+    .col-lg-9 {
+        width: 75%;
+    }
+    .col-lg-10 {
+        width: 83.3333%;
+    }
+    .col-lg-11 {
+        width: 91.6667%;
+    }
+    .col-lg-12 {
+        width: 100%;
+    }
+}
+
+.decor {
+    position: absolute;
+    pointer-events: none;
+}
+
+.no-copy {
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,.col-xls-1,.col-xls-2,.col-xls-3,.col-xls-4,.col-xls-5,.col-xls-6,.col-xls-7,.col-xls-8,.col-xls-9,.col-xls-10,.col-xls-11,.col-xls-12,.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
