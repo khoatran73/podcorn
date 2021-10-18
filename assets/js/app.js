@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
     const header = document.querySelector(".header");
     const html = document.querySelector("html");
     const navIcon = document.querySelector("#nav-icon");
@@ -10,7 +10,7 @@ window.onload = function() {
         if (scrollY === 0) {
             if (header.classList.contains("header-fixed")) {
                 header.classList.remove("header-fixed");
-            }   
+            }
         }
     })
 
@@ -24,20 +24,5 @@ window.onload = function() {
             navIcon.classList.remove("fa-times");
             navIcon.classList.add("fa-bars");
         }
-        
-        // if (navBar.style.display === "none") {
-        //     // navBar.style.display = "flex";
-        //     navBar.style.bottom = 100 + "%";
-        //     navIcon.classList.remove("fa-bars");
-        //     navIcon.classList.add("fa-times");
-        // } else {
-        //     navBar.style.display = "none";
-        //     navIcon.classList.remove("fa-times");
-        //     navIcon.classList.add("fa-bars");
-        // }
-        
     })
-
-    
-
 }
